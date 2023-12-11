@@ -1,7 +1,7 @@
-.PHONY: up
+.PHONY: up-lost
 up: ## docker環境を立ち上げる
-	docker-compose up -d
+	cd lostisland && docker-compose up -d
 
-.PHONY: down
+.PHONY: down-lost
 down: ## dockerイメージを削除し、docker環境を閉じる
-	docker-compose down
+	cd lostisland && docker-compose down
